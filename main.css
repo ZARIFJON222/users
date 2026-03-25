@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f5f9;
+  color: #2c3249;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 52px 36px 80px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.header h1 {
+  font-size: 46px;
+  color: #1f326e;
+  margin-bottom: 14px;
+}
+
+.header p {
+  color: #9e9a96;
+  font-size: 18px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  align-items: flex-start;
+}
+
+/* Chap taraf - Yangi qo'shish */
+.add-panel {
+  width: 340px;
+  flex: 0 0 340px;
+  background: #ffffff;
+  border: 1px solid #ebeff6;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(84, 102, 157, 0.09);
+  padding: 30px;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  color: #3b49d0;
+}
+
+.panel-header .icon {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.panel-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 9px;
+  color: #4d525e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-group input {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #e4e9f2;
+  border-radius: 12px;
+  background: #f8fafc;
+  font: inherit;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  height: 48px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #5a55f0 0%, #4c44df 100%);
+  color: white;
+  box-shadow: 0 8px 18px rgba(76, 68, 223, 0.25);
+}
+
+/* O'ng taraf */
+.users-section {
+  flex: 1 1 700px;
+  min-width: 320px;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 26px;
+  background: #ffffff;
+  border: 1px solid #ebeff6;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(84, 102, 157, 0.09);
+  padding-left: 56px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #9aa5b7;
+  font-size: 24px;
+}
+
+#search-input {
+  width: 100%;
+  height: 58px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  outline: none;
+}
+
+/* Kartalar */
+.user-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.user-card {
+  flex: 1 1 320px;
+  min-width: 320px;
+  background: #ffffff;
+  border: 1px solid #ebeff6;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(84, 102, 157, 0.09);
+  padding: 24px;
+}
+
+.user-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 9999px;
+  background: #eef0ff;
+  color: #4f52e3;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-head h2 {
+  font-size: 28px;
+  margin: 0;
+  color: #1f2937;
+}
+
+.user-head p {
+  margin: 5px 0 0;
+  color: #8b95a7;
+  font-size: 15px;
+}
+
+.user-detail {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  color: #667085;
+  font-size: 15px;
+}
+
+.detail-icon {
+  color: #99a0b0;
+}
+
+.card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.action-button {
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.action-button.danger {
+  background: #fff1f1;
+  color: #d16c77;
+}
+
+.action-button:not(.danger) {
+  background: #f3f6fb;
+  color: #596276;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #999;
+}
+
+/* Status xabari */
+#status-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 2000;
+}
+
+#status-message.error {
+  background: #fee2e2;
+  color: #d32f2f;
+}
+
+#status-message.success {
+  background: #d1fae5;
+  color: #10b981;
+}
+
+/* Bo'sh holat */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #888;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
